@@ -4,7 +4,7 @@
 
 ![](https://img.shields.io/badge/Support-Linux-lightgrey) ![](https://img.shields.io/badge/Python->3.0-green)
 
-Questo firewall è stato creato come alternativa alle regole iptables per bloccare attacchi Dos/Dos più leggeri in casi più specifici.
+Questo firewall è stato creato come alternativa alle regole iptables per bloccare attacchi Dos/DDos più leggeri in casi più specifici.
 Lo script analizzerà in tempo reale ogni singolo ip e bloccherà gli ip che invieranno troppi pacchetti (puoi impostare te il numero di pacchetti).
 
 ---
