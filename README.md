@@ -1,6 +1,6 @@
 <img src="https://img.freepik.com/premium-vector/digital-eye-data-network-cyber-security-technology-vector-background-futuristic-tech-virtual-cyberspace-internet-secure-surveillance-binary-code-digital-eye-safety-scanner_8071-7138.jpg">
 
-# Real Time Ip Blocker
+# PacketLimiter
 
 ![](https://img.shields.io/badge/Support-Linux-lightgrey) ![](https://img.shields.io/badge/Python->3.0-green)
 
