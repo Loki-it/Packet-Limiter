@@ -4,8 +4,7 @@
 
 ![](https://img.shields.io/badge/Support-Linux-lightgrey) ![](https://img.shields.io/badge/Python->3.0-green)
 
-Questo firewall è stato creato come alternativa alle regole iptables per bloccare attacchi Dos/DDos più leggeri in casi più specifici.
-Lo script analizzerà in tempo reale ogni singolo ip e bloccherà gli ip che invieranno troppi pacchetti (puoi impostare te il numero di pacchetti).
+Questo firewall è stato creato come alternativa alle regole iptables per bloccare uno o più ip che mandano  troppi pacchetti, può essere utile per bloccare gli ip che utilizzano troppa banda sul lungo periodo
 
 ---
 
@@ -18,7 +17,7 @@ Lo script analizzerà in tempo reale ogni singolo ip e bloccherà gli ip che inv
 ### Configurazione 🔧
 
 - sudo apt-get install screen tcpdump 
-- screen -S firewall python3 main.py
+- screen -S pl python3 main.py
 
 ### Test Effettuati ✅
 - Attacco da ip singolo: Bloccato 
