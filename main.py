@@ -18,7 +18,6 @@ def extract_attacker_ip(row):
     return ips[0] if ips else None
 
 try:
-    # Modificato per catturare sia pacchetti TCP che UDP
     with subprocess.Popen(['tcpdump', '-n', '-l', '-i', INTERFACE, 'ip', 'and', '(tcp or udp)'], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, text=True) as process:
         for row in iter(process.stdout.readline, ''):
             attacker_ip = extract_attacker_ip(row)
@@ -26,7 +25,6 @@ try:
             if not attacker_ip or attacker_ip == ssh_client_ip:
                 continue
             
-            # Determina se il pacchetto è TCP o UDP e aggiorna il conteggio corrispondente
             if 'TCP' in row:
                 tcp_ip_counts[attacker_ip] = tcp_ip_counts.get(attacker_ip, 0) + 1
                 limit_reached = tcp_ip_counts[attacker_ip] > TCP_LIMIT
